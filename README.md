@@ -1,4 +1,6 @@
-# Final-Project-Statistical-Modelling-with-Python
+# CityBikes in use and Cafes within 1000m
+
+<img width="287" alt="bike_guy" src="https://github.com/user-attachments/assets/2ecc54ea-ce2a-41c2-8878-527e972960cc">
 
 ## Project/Goals
 
@@ -15,11 +17,15 @@ Each api call provided a response in JSON format. These responses were then pars
 
 The yelp and CityBikes dataframes were joined using the city bikes' station ID. This allowed me to group the data by bike station and return the relevant number of cafes within 1000m of the bike station. At this point the data was saved as model_data to be used in a regression model.
 
-This model was created to test if there is a relationship between the number of bikes at a bike station, and the number of cafes within 1000m of that station
+This model was created to test if there is a relationship between the number of bikes at a bike station, and the number of cafes within 1000m of that station. Below is a pair plot of the variables used in the model:
+
+![pairplot](https://github.com/user-attachments/assets/d384fcf4-46e1-4a16-abf8-afd70ca4f067)
 
 A linear regression model was set up using the total number of bikes at a station as the independent variable, and the number of cafes within a 1000m radius as the dependent variable. This returned very poor results (R-squared: 0.05, p-value: 0.275) so the model was run two more times using the empty slots, and available bikes as the dependants.
 
 ## Results
+
+<img width="728" alt="empty_slots_results" src="https://github.com/user-attachments/assets/39e454e7-dbc7-47c1-bb61-93761470e92c">
 
 Empty slots ended up being the 'best of the worst' for this model. However, with an R-squared value of 0.024 and a p-value of 0.013, we can still not reject the null hypothesesis of this model. At this time, with the fairly limited data used, the empty slots of a city bikes station is not a good predictor of the number of cafes in an area. Logically this makes sense, as there are many more important factors to a potential cafe owner than the available bikes for rent nearby.
 
@@ -31,3 +37,5 @@ Once the JSON responses were received, I had a bit of a difficult time parsing t
 ## Future Goals
 
 I would like to repeat this project using a different data set for the dependant variables. Accessing some more relevant data such as population density or household income will be my next avenue of research. I believe this data will be a better predictor of the cafes in an area. Also, I would like to include the average rating of the cafes to see if their is any relationship better income and the 'quality' of cafes in an area.
+
+Alternatively, I could use the bike data to determine if there is any impact on the change in emissions of an area. Does an increase in bike sharing availability cause a decrease in emissions? This may be difficult to quantify but could be an interesting avenue to explore. 
