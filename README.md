@@ -25,7 +25,7 @@ A linear regression model was set up using the total number of bikes at a statio
 
 ## Results
 
-
+<img width="728" alt="empty_slots_results" src="https://github.com/user-attachments/assets/39e454e7-dbc7-47c1-bb61-93761470e92c">
 
 Empty slots ended up being the 'best of the worst' for this model. However, with an R-squared value of 0.024 and a p-value of 0.013, we can still not reject the null hypothesesis of this model. At this time, with the fairly limited data used, the empty slots of a city bikes station is not a good predictor of the number of cafes in an area. Logically this makes sense, as there are many more important factors to a potential cafe owner than the available bikes for rent nearby.
 
