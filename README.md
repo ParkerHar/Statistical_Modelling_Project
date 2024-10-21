@@ -37,3 +37,5 @@ Once the JSON responses were received, I had a bit of a difficult time parsing t
 ## Future Goals
 
 I would like to repeat this project using a different data set for the dependant variables. Accessing some more relevant data such as population density or household income will be my next avenue of research. I believe this data will be a better predictor of the cafes in an area. Also, I would like to include the average rating of the cafes to see if their is any relationship better income and the 'quality' of cafes in an area.
+
+Alternatively, I could use the bike data to determine if there is any impact on the change in emissions of an area. Does an increase in bike sharing availability cause a decrease in emissions? This may be difficult to quantify but could be an interesting avenue to explore. 
