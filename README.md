@@ -1,5 +1,7 @@
 # Final-Project-Statistical-Modelling-with-Python
 
+<img width="287" alt="bike_guy" src="https://github.com/user-attachments/assets/2ecc54ea-ce2a-41c2-8878-527e972960cc">
+
 ## Project/Goals
 
 The CityBikes api was accessed to find the location of city bike stations in Vancouver, BC. The Yelp and Foursquare apis were then accessed to find all cafes within a 1000m radius of the city bike stations. This project was created to use the returned data and determine if there is a relationship between the number of bikes currently in use (empty spots) and the number of cafes within a 1000m radius. 
@@ -15,7 +17,9 @@ Each api call provided a response in JSON format. These responses were then pars
 
 The yelp and CityBikes dataframes were joined using the city bikes' station ID. This allowed me to group the data by bike station and return the relevant number of cafes within 1000m of the bike station. At this point the data was saved as model_data to be used in a regression model.
 
-This model was created to test if there is a relationship between the number of bikes at a bike station, and the number of cafes within 1000m of that station
+This model was created to test if there is a relationship between the number of bikes at a bike station, and the number of cafes within 1000m of that station. Below is a pair plot of the variables used in the model:
+
+
 
 A linear regression model was set up using the total number of bikes at a station as the independent variable, and the number of cafes within a 1000m radius as the dependent variable. This returned very poor results (R-squared: 0.05, p-value: 0.275) so the model was run two more times using the empty slots, and available bikes as the dependants.
 
