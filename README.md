@@ -19,11 +19,13 @@ The yelp and CityBikes dataframes were joined using the city bikes' station ID. 
 
 This model was created to test if there is a relationship between the number of bikes at a bike station, and the number of cafes within 1000m of that station. Below is a pair plot of the variables used in the model:
 
-
+![pairplot](https://github.com/user-attachments/assets/d384fcf4-46e1-4a16-abf8-afd70ca4f067)
 
 A linear regression model was set up using the total number of bikes at a station as the independent variable, and the number of cafes within a 1000m radius as the dependent variable. This returned very poor results (R-squared: 0.05, p-value: 0.275) so the model was run two more times using the empty slots, and available bikes as the dependants.
 
 ## Results
+
+
 
 Empty slots ended up being the 'best of the worst' for this model. However, with an R-squared value of 0.024 and a p-value of 0.013, we can still not reject the null hypothesesis of this model. At this time, with the fairly limited data used, the empty slots of a city bikes station is not a good predictor of the number of cafes in an area. Logically this makes sense, as there are many more important factors to a potential cafe owner than the available bikes for rent nearby.
 
